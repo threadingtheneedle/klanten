@@ -14,6 +14,23 @@ $TEXT = "Wario";
 <body>
     <?php
         echo "Lalala $TEXT with a side of mayonnaise";
-    ?>   
+    ?>
+    <!--Creates a HTML Spreadsheet
+    tr stands for Table row
+    th stands for table header
+    td stands for table data
+    -->
+    <table>
+        <tr>
+            <th>
+                FUCKER
+            </th>
+        </tr>
+        <tr>
+            <td>
+                FUCKER 2
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

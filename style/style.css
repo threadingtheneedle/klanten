@@ -1,3 +1,7 @@
 body{
     margin-left: 5px;
 }
+table{
+    /* In order, it's: how thick the lines are, what pattern to use and the color */
+    border: 1px,solid,black;
+}
