@@ -1,14 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-</head>
-<body>
-    <?php
+<?php
+// Host domain
+$host = "localhost";
+// The database's name
+$dbname = "eindopdracht";
+// Username used to login into the database
+$username = "root";
+// Password
+$password = "";
 
-    ?>
-</body>
-</html>
+// Bruh idk
+try {
+    $connection = new PDO(
+        "mysql:host=$host;dbname=$dbname;charset=utf8",
+        $username,
+        $password
+    );
+
+    $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+} catch (PDOException $e) {
+    // Sends you this message if the connection fails
+    die("Databaseverbinding mislukt: " . $e->getMessage());
+}
+?>

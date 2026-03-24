@@ -1,5 +1,6 @@
 <?php
 $TEXT = "Wario";
+require "database.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,23 +15,29 @@ $TEXT = "Wario";
 <body>
     <?php
         echo "Lalala $TEXT with a side of mayonnaise";
+
+        $sql = "SELECT * FROM eindopdrdata";
+
+        $result = $connection->query($sql);
+
+        echo "
+                <table>
+                    <th>ID</th>
+                    <th>Voornaam</th>
+                    <th>Achternaam</th>
+                    <th>Email</th>
+                    <th>Geboortedatum</th>
+            ";
+
+        foreach ($result as $student) {
+            echo "<tr><td>" . $student["ID"] . "</td><td>" . $student["Voornaam"] . "</td><td>" . $student["Achternaam"] . "</td><td>" . $student["Email"] . "</td><td>" . $student["Geboortedatum"] . "</td><td>" . "</td></tr>";
+        }
+        echo "</table>";
     ?>
     <!--Creates a HTML Spreadsheet
     tr stands for Table row
     th stands for table header
     td stands for table data
     -->
-    <table>
-        <tr>
-            <th>
-                FUCKER
-            </th>
-        </tr>
-        <tr>
-            <td>
-                FUCKER 2
-            </td>
-        </tr>
-    </table>
 </body>
 </html>
