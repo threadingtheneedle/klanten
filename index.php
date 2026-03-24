@@ -30,7 +30,7 @@ require "database.php";
             ";
 
         foreach ($result as $student) {
-            echo "<tr><td>" . $student["ID"] . "</td><td>" . $student["Voornaam"] . "</td><td>" . $student["Achternaam"] . "</td><td>" . $student["Email"] . "</td><td>" . $student["Geboortedatum"] . "</td><td>" . "</td></tr>";
+            echo "<tr><td>" . $student["ID"] . "</td><td>" . $student["Voornaam"] . "</td><td>" . $student["Achternaam"] . "</td><td>" . $student["Email"] . "</td><td>" . $student["Geboortedatum"] . "</td></tr>";
         }
         echo "</table>";
     ?>
