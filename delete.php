@@ -1,11 +1,10 @@
 <?php
 require "database.php";
 
-//what the fuck is this bruh
 if (isset($_GET["ID"])){
-    echo $_GET["ID"] . " is the selected id...";
-    $QUERY = "DELETE FROM eindopdrdata WHERE ID = ".$_GET["ID"];
+    $query = "DELETE FROM eindopdrdata WHERE ID = ".$_GET["ID"];
     $connection->exec(statement: $query);
+    echo "The id known as " . $_GET["ID"] . " has been DELETED......";
 }
 // if whatever above this failed than it shows this
 else{

@@ -5,8 +5,9 @@
 <html lang="en">
 <head>
     <!--Boostraps importing-->
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/Prophet.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yo!!</title>
@@ -18,12 +19,12 @@
         $result = $connection->query($sql);
 
         echo "
-                <table>
+                <table id='margin'>
                     <th>ID</th>
                     <th>Voornaam</th>
                     <th>Achternaam</th>
                     <th>Email</th>
-                    <th>Geboortedatum</th>
+                    <th>Geboortedatum [YYYY-MM-DD]</th>
             ";
 
         foreach ($result as $client) {
