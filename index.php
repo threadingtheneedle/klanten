@@ -1,6 +1,5 @@
 <?php
-$TEXT = "Wario";
-require "database.php";
+    require "database.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -14,8 +13,6 @@ require "database.php";
 </head>
 <body>
     <?php
-        echo "Lalala $TEXT with a side of mayonnaise";
-
         $sql = "SELECT * FROM eindopdrdata";
 
         $result = $connection->query($sql);
@@ -29,8 +26,9 @@ require "database.php";
                     <th>Geboortedatum</th>
             ";
 
-        foreach ($result as $student) {
-            echo "<tr><td>" . $student["ID"] . "</td><td>" . $student["Voornaam"] . "</td><td>" . $student["Achternaam"] . "</td><td>" . $student["Email"] . "</td><td>" . $student["Geboortedatum"] . "</td></tr>";
+        foreach ($result as $client) {
+            echo "<tr><td>" . $client["ID"] . "</td><td>" . $client["Voornaam"] . "</td><td>" . $client["Achternaam"] . "</td><td>" . $client["Email"] . "</td><td>" . $client["Geboortedatum"] . "</td><td>" . "<a href='delete.php?ID=".$client["ID"]."'>Delete</a>" .
+            "</td></tr>";
         }
         echo "</table>";
     ?>
