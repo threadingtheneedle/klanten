@@ -1,8 +1,27 @@
 #margin{
-    margin-left: 2rem;
     margin-top: 1rem;
 }
-table,tr,td,th{
+tr,td,th{
     border:0.1rem,solid,black;
     padding:0.5rem
+}
+body{
+    background-color: #BEFFBE;
+}
+.alignCenter{
+    display:flex;
+    justify-content:center;
+}
+#alignButtons{
+    display: flex;
+    justify-content: space-around;
+}
+.mainButtons{
+    background-color:#7ba37b;
+    color:#FFFFFF;
+    padding:0.5rem;
+}
+.mainButtons:hover{
+    background-color:#FFFFFF;
+    color:#7ba37b;
 }

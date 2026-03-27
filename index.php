@@ -13,30 +13,47 @@
     <title>Yo!!</title>
 </head>
 <body>
-    <?php
-        $sql = "SELECT * FROM eindopdrdata";
+    <header>
+        <h1 class='alignCenter'>
+            Database!!
+        </h1>
+    </header>
+    <main id='alignButtons'>
+        <form method="post" action="index.php">
+            <input type="text" name="nameSearch" placeholder="Search for a name" required>
+            <button type="submit" name="send">
+                Search
+            </button>
+        </form>
+        <a href='add.php' class='mainButtons'>Add</a>
+        <a href='update.php' class='mainButtons'>Update</a>
+    </main>
+    <footer>
+        <?php
+            $sql = "SELECT * FROM eindopdrdata";
 
-        $result = $connection->query($sql);
+            $result = $connection->query($sql);
 
-        echo "
-                <table id='margin'>
-                    <th>ID</th>
-                    <th>Voornaam</th>
-                    <th>Achternaam</th>
-                    <th>Email</th>
-                    <th>Geboortedatum [YYYY-MM-DD]</th>
-            ";
+            echo "
+                    <!--Creates a HTML Spreadsheet
+                    tr stands for Table row
+                    th stands for table header
+                    td stands for table data
+                    -->
+                    <table class='alignCenter' id='margin'>
+                        <th>ID</th>
+                        <th>Voornaam</th>
+                        <th>Achternaam</th>
+                        <th>Email</th>
+                        <th>Geboortedatum [YYYY-MM-DD]</th>
+                ";
 
-        foreach ($result as $client) {
-            echo "<tr><td>" . $client["ID"] . "</td><td>" . $client["Voornaam"] . "</td><td>" . $client["Achternaam"] . "</td><td>" . $client["Email"] . "</td><td>" . $client["Geboortedatum"] . "</td><td>" . "<a href='delete.php?ID=".$client["ID"]."'>Delete</a>" .
-            "</td></tr>";
-        }
-        echo "</table>";
-    ?>
-    <!--Creates a HTML Spreadsheet
-    tr stands for Table row
-    th stands for table header
-    td stands for table data
-    -->
+            foreach ($result as $client) {
+                echo "<tr><td>" . $client["ID"] . "</td><td>" . $client["Voornaam"] . "</td><td>" . $client["Achternaam"] . "</td><td>" . $client["Email"] . "</td><td>" . $client["Geboortedatum"] . "</td><td>" . "<a href='delete.php?ID=".$client["ID"]."'>Delete</a>" .
+                "</td></tr>";
+            }
+            echo "</table>";
+        ?>
+    </footer>
 </body>
 </html>
