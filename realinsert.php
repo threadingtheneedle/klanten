@@ -7,9 +7,9 @@ require "database.php";
     $insert = $connection->prepare($sql);
 
     $insert->execute([
-        ":voornaam" => $_POST[voornaamPost],
-        ":achternaam" => $achternaamPost,
-        ":email" => $emailPost,
-        ":geboortedatum" => $geboortedatumPost
-    ])
+        ":voornaam" => $_POST["voornaamInp"],
+        ":achternaam" => $_POST["achternaamInp"],
+        ":email" => $_POST["emailInp"],
+        ":geboortedatum" => $_POST["geboortedatumInp"],
+        ]);
 ?>

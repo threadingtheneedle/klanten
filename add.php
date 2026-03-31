@@ -9,10 +9,10 @@
 </head>
 <body>
     <form method="post" action="realinsert.php">
-        <input type="text" name="voornaamPost" placeholder="Voornaam" required>
-        <input type="text" name="achternaamPost" placeholder="Achternaam" required>
-        <input type="email" name="emailPost" placeholder="Email" required>
-        <input type="text" name="geboortedatumPost" placeholder="Datum [YYYY-MM-DD]" required>
+        <input type="text" name="voornaamInp" placeholder="Voornaam" required>
+        <input type="text" name="achternaamInp" placeholder="Achternaam" required>
+        <input type="email" name="emailInp" placeholder="Email" required>
+        <input type="text" name="geboortedatumInp" placeholder="Datum [YYYY-MM-DD]" required>
         <button type="submit" name="insert">
             Insert
         </button>
