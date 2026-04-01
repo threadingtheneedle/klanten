@@ -12,4 +12,8 @@ require "database.php";
         ":email" => $_POST["emailInp"],
         ":geboortedatum" => $_POST["geboortedatumInp"],
         ]);
+// auto redirect to the index
+header("Location: index.php");
+
+exit;
 ?>
