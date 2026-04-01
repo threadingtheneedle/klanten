@@ -9,14 +9,22 @@
     <title>Inserting</title>
 </head>
 <body>
-    <form method="post" action="realinsert.php" class="formAlign">
-        <input type="text" name="voornaamInp" placeholder="Voornaam">
-        <input type="text" name="achternaamInp" placeholder="Achternaam">
-        <input type="email" name="emailInp" placeholder="Email">
-        <input type="text" name="geboortedatumInp" placeholder="Datum [YYYY-MM-DD]">
-        <button type="submit" name="insert">
-            Insert
-        </button>
-    </form>
+    <div class="alignCenterButton">
+        <h1>
+            Update your data!!
+        </h1>
+        <form method="post" action="realinsert.php" class="formAlign">
+            <input type="text" name="voornaamInp" placeholder="Voornaam">
+            <input type="text" name="achternaamInp" placeholder="Achternaam">
+            <input type="email" name="emailInp" placeholder="Email">
+            <input type="text" name="geboortedatumInp" placeholder="Datum [YYYY-MM-DD]">
+            <button type="submit" name="insert">
+                Insert
+            </button>
+        </form>
+        <a href=index.php class="mainButtons">
+            Cancel
+        </a>
+    </div>
 </body>
 </html>
