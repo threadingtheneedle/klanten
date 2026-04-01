@@ -35,3 +35,6 @@ body{
     flex-direction:column;
     align-items:center;
 }
+.invisHeader{
+    border:0rem, none, #FFFFFF;
+}

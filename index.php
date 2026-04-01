@@ -26,7 +26,6 @@
             </button>
         </form>
         <a href='add.php' class='mainButtons'>Add</a>
-        <a href='update.php' class='mainButtons'>Update</a>
     </main>
     <footer>
         <?php
@@ -46,11 +45,13 @@
                         <th>Achternaam</th>
                         <th>Email</th>
                         <th>Geboortedatum [YYYY-MM-DD]</th>
+                        <th class='invisHeader'>Actions</th>
+                        <th class='invisHeader'> </th>
                 ";
 
             foreach ($result as $client) {
-                echo "<tr><td>" . $client["ID"] . "</td><td>" . $client["Voornaam"] . "</td><td>" . $client["Achternaam"] . "</td><td>" . $client["Email"] . "</td><td>" . $client["Geboortedatum"] . "</td><td>" . "<a href='delete.php?ID=".$client["ID"]."'>Delete</a>" .
-                "</td></tr>";
+                echo "<tr><td>" . $client["ID"] . "</td><td>" . $client["Voornaam"] . "</td><td>" . $client["Achternaam"] . "</td><td>" . $client["Email"] . "</td><td>" . $client["Geboortedatum"] . "</td><td>" . "<a href='delete.php?ID=".$client["ID"]."'>Delete</a>"
+                . "</td><td>" . "<a href='update.php?ID=".$client["ID"]."'>Update</a>" . "</td></tr>";
             }
             echo "</table>";
         ?>
