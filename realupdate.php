@@ -1,7 +1,7 @@
 <?php
 require "database.php";
 
-    $sql = "UPDATE INTO `eindopdrdata` (`voornaam`, `achternaam`, `email`, `geboortedatum`)
+    $sql = "UPDATE `eindopdrdata` (`voornaam`, `achternaam`, `email`, `geboortedatum`)
             VALUES (:voornaam, :achternaam, :email, :geboortedatum)";
 
     $insert = $connection->prepare($sql);

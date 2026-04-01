@@ -2,8 +2,14 @@
 require "database.php";
 
 if (isset($_GET["ID"])){
+    //Sets up the sql query
     $query = "DELETE FROM eindopdrdata WHERE ID = ".$_GET["ID"];
+    //Resets the ID auto increments
+    $idCheck = "ALTER TABLE eindopdrdata AUTO_INCREMENT = ".$_GET["ID"];
+    //Executes the 1st query
     $connection->exec(statement: $query);
+    //Executes the 2nd query
+    $connection->exec(statement: $idCheck);
 }
 // if whatever above this failed than it shows this
 else{

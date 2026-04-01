@@ -8,7 +8,7 @@
     <title>Inserting</title>
 </head>
 <body>
-    <form method="post" action="realinsert.php">
+    <form method="post" action="realinsert.php" class="formAlign">
         <input type="text" name="voornaamInp" placeholder="Voornaam" required>
         <input type="text" name="achternaamInp" placeholder="Achternaam" required>
         <input type="email" name="emailInp" placeholder="Email" required>
