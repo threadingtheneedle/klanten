@@ -14,11 +14,15 @@
             Update your data!!
         </h1>
         <form method="get" action="realupdate.php" class="formAlign">
-            <input type="text" name="voornaamInp" placeholder="Voornaam">
-            <input type="text" name="achternaamInp" placeholder="Achternaam">
-            <input type="email" name="emailInp" placeholder="Email">
-            <input type="text" name="geboortedatumInp" placeholder="Datum [YYYY-MM-DD]">
-            <button type="submit" name="Update">
+            <label for:"voornaam">Voornaam</label>
+            <input type="text" name="voornaamInp">
+            <label for:"achternaam">Achternaam</label>
+            <input type="text" name="achternaamInp">
+            <label for:"email">Email</label>
+            <input type="email" name="emailInp">
+            <label for:"geboortedatum">Geboortedatum</label>
+            <input type="text" name="geboortedatumInp" placeholder="[YYYY-MM-DD]">
+            <button type="get" id="buttonAlign">
                 Insert
             </button>
         </form>

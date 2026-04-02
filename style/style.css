@@ -26,9 +26,14 @@ body{
     color:#7ba37b;
 }
 .formAlign{
+    display:flex;
+    flex-direction:column;
     padding-top:1rem;
     margin-left:1rem;
     margin-bottom:2rem;
+}
+#buttonAlign{
+    margin-top:2rem;
 }
 .alignCenterButton{
     display:flex;

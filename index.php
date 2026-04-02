@@ -34,11 +34,6 @@
             $result = $connection->query($sql);
 
             echo "
-                    <!--Creates a HTML Spreadsheet
-                    tr stands for Table row
-                    th stands for table header
-                    td stands for table data
-                    -->
                     <table class='alignCenter' id='margin'>
                         <th>ID</th>
                         <th>Voornaam</th>
