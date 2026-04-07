@@ -22,6 +22,8 @@
             <input type="email" name="emailInp">
             <label for:"geboortedatum">Geboortedatum</label>
             <input type="text" name="geboortedatumInp" placeholder="[YYYY-MM-DD]">
+            <label for:"ID">Confirm?</label>
+            <input type="checkbox" required>
             <button type="get" id="buttonAlign">
                 Insert
             </button>
