@@ -19,13 +19,9 @@
         </h1>
     </header>
     <main id='alignButtons'>
-        <form method="post" action="index.php">
-            <input type="text" name="nameSearch" placeholder="Search for a name" required>
-            <button type="submit" name="send">
-                Search
-            </button>
-        </form>
-        <a href='add.php' class='mainButtons'>Add</a>
+        <h2>
+            <a href='add.php' class='mainButtons'>Add</a>
+        </h2>
     </main>
     <footer>
         <?php

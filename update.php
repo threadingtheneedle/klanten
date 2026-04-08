@@ -21,8 +21,10 @@
             <label for:"email">Email</label>
             <input type="email" name="emailInp">
             <label for:"geboortedatum">Geboortedatum</label>
-            <input type="text" name="geboortedatumInp" placeholder="[YYYY-MM-DD]">
-            <label for:"ID">Confirm?</label>
+            <input type="text" name="geboortedatumInp">
+            <label for:"ID">ID (READ ONLY)</label>
+            <input type="int" name="ID" value="<?php echo $_GET["ID"]?>" readonly>
+            <label>Confirm?</label>
             <input type="checkbox" required>
             <button type="get" id="buttonAlign">
                 Insert

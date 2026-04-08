@@ -14,10 +14,16 @@
             Add a new person to your database!!
         </h1>
         <form method="post" action="realinsert.php" class="formAlign">
-            <input type="text" name="voornaamInp" placeholder="Voornaam" required>
-            <input type="text" name="achternaamInp" placeholder="Achternaam" required>
-            <input type="email" name="emailInp" placeholder="Email" required>
-            <input type="text" name="geboortedatumInp" placeholder="Datum [YYYY-MM-DD]" required>
+            <label>Voornaam</label>
+            <input type="text" name="voornaamInp" required>
+            <label>Achternaam</label>
+            <input type="text" name="achternaamInp" required>
+            <label>Email</label>
+            <input type="email" name="emailInp" required>
+            <label>Geboortedatum [YYYY/MM/DD]</label>
+            <input type="text" name="geboortedatumInp" required>
+            <label>Confirm?</label>
+            <input type="checkbox" required>
             <button type="submit" name="insert">
                 Insert
             </button>

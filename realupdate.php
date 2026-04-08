@@ -13,7 +13,7 @@ require "database.php";
         ":id" => $_GET["ID"]
         ]);
 // auto redirect to the index
-//header("Location: index.php");
+header("Location: index.php");
 
-//exit;
+exit;
 ?>
