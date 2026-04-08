@@ -27,7 +27,7 @@
             <label>Confirm?</label>
             <input type="checkbox" required>
             <button type="get" id="buttonAlign">
-                Insert
+                Update
             </button>
         </form>
         <a href=index.php class="mainButtons">

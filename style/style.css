@@ -21,10 +21,12 @@ body{
     background-color:#7ba37b;
     color:#FFFFFF;
     padding:0.5rem;
+    text-decoration:none;
 }
 .mainButtons:hover{
     background-color:#FFFFFF;
     color:#7ba37b;
+    text-decoration:none;
 }
 .invisHeader{
     border:0rem, none, #FFFFFF;
