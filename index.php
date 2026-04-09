@@ -19,9 +19,9 @@
         </h1>
     </header>
     <main id='alignButtons'>
-        <h2>
+        <h3>
             <a href='add.php' class='mainButtons'>Add</a>
-        </h2>
+        </h3>
     </main>
     <footer>
         <?php

@@ -20,7 +20,7 @@
             <input type="text" name="achternaamInp">
             <label for:"email">Email</label>
             <input type="email" name="emailInp">
-            <label for:"geboortedatum">Geboortedatum</label>
+            <label for:"geboortedatum">Geboortedatum [YYYY/MM/DD]</label>
             <input type="text" name="geboortedatumInp">
             <label for:"ID">ID (READ ONLY)</label>
             <input type="int" name="ID" value="<?php echo $_GET["ID"]?>" readonly>

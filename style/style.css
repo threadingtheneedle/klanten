@@ -40,10 +40,13 @@ body{
     margin-bottom:2rem;
 }
 #buttonAlign{
-    margin-top:2rem;
+    margin:1rem;
 }
 .alignCenterButton{
     display:flex;
     flex-direction:column;
     align-items:center;
+}
+label{
+    text-align:center;
 }

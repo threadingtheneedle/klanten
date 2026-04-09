@@ -16,7 +16,7 @@
         <form method="get" action="realdelete.php" class="formAlign">
             <input type="int" name="ID" value="<?php echo $_GET["ID"]?>" readonly>
             <label>You can't undo this change!</label>
-            <input type="checkbox" required>
+            <input type="checkbox"required>
             <button type="get" id="buttonAlign">
                 Delete
             </button>

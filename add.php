@@ -24,7 +24,7 @@
             <input type="text" name="geboortedatumInp" required>
             <label>Confirm?</label>
             <input type="checkbox" required>
-            <button type="submit" name="insert">
+            <button type="submit" name="insert" id="buttonAlign">
                 Insert
             </button>
         </form>
